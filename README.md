@@ -1,2 +1,2 @@
 # Docker
-Repositório para arquivos Dockerfile e Dockecompose
+Repositório para arquivos Dockerfile e Dockercompose
