@@ -1,6 +1,6 @@
 #Um dockerfile com uma imagem do ubuntu com o servidor web nginx.
 
-FROM ubuntu
+FROM ubuntu:latest
 
 MAINTAINER edjaniosilva.al@gmail.com
 
