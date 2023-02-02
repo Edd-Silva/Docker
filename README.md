@@ -18,9 +18,21 @@ Alguns comandos básicos para iniciar.
 
 $ docker version
 
-Executando um container.
+#Executando um container.
 
-$ docker container run
+$ docker container run "id-container"
+
+#Parando um container
+
+$ docker contanier stop "id-container"
+
+#Restartando um container
+
+$ docker container restart "id-container"
+
+#Revomendo um container a flag -f força a remoção.
+
+$ docker container rm "id-container"
 
 #Listando somente os containers que estão em execução
 
@@ -30,7 +42,19 @@ $ docker container ls
 
 $ docker container ls -a
 
+#Inspecionando um container
+
+$ docker container inspect "id-container"
+
+#Interagindo com o container
+
+
+
 #Listando imagens
 
 $ docker image ls
+
+#Insecionando uma imagem
+
+$ docker image inspect "id-image"
 
