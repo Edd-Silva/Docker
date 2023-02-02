@@ -7,7 +7,7 @@ Alguns comandos básicos para iniciar.
 
 Verificar a versão do Docker
 
-$ docker verion
+$ docker version
 
 Executando um container.
 
