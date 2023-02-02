@@ -46,9 +46,19 @@ $ docker container ls -a
 
 $ docker container inspect "id-container"
 
-#Interagindo com o container
+#Interagindo com container em execução
 
+#Listando o conteúdo do container
 
+$ docker container exec -it "id-container" ls 
+
+# Entrando no container
+
+$ docker container exec -it "id-container" /bin/bash
+
+#Para acessar um container com permissão de usuários root.
+
+$ docker container exec -u -0 -it "id-container" /bin/bash
 
 #Listando imagens
 
