@@ -10,6 +10,8 @@
                                 
 
 [![Docker Version][docker-image]][docker-url]                                                                                                                
+
+![](Docker-logo.png)
                                                                                                                   
 # Repositório para arquivos Dockerfile e alguns comandos.
 
