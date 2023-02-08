@@ -8,12 +8,12 @@ RUN adduser -u 1001 -D alpine -h /home/alpine
 #RUN useradd -ms /bin/bash node_user
 #Instalando pacotes
 RUN apk add --no-cache \
-   tar \
    tzdata \
-   bash \
-   g++ \
-   musl-dev \
-   ca-certificates
+   #tar \
+   #bash \
+   #g++ \
+   #musl-dev \
+   #ca-certificates
 
 # Time_zone, A variável TZ, vai receber o fuzo horário que você determinar.
 ENV TZ="America/Sao_Paulo"
