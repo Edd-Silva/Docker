@@ -1,7 +1,4 @@
-# https://hub.docker.com/_/httpd
-# https://github.com/docker-library/httpd/blob/a7acc047c8970e0502f4c6b577775f840f1f99b6/2.4/alpine/Dockerfile
-
-FROM httpd:2.4.52-alpine
+FROM httpd:2.4.55-alpine
 
 LABEL webserver="1.0"
 MAINTAINER ="Edjanio Silva <edjaniosilva.al@gmail.com>"
@@ -18,8 +15,11 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 WORKDIR $HTTPD_PREFIX
 
 #Adicionando o apk tzdata para a timezone do container
-RUN apk add --no-cache \
+RUN apk add --no-cache --virtual .build-deps \
     tzdata
+
+# https://httpd.apache.org/security/vulnerabilities_24.html
+ENV HTTPD_PATCHES=""
 
 #Definindo a timezone para o container "America/Sao_Paulo"
 
