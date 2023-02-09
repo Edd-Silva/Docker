@@ -6,8 +6,6 @@ FROM httpd:2.4.52-alpine
 LABEL webserver="1.0"
 MAINTAINER ="Edjanio Silva <edjaniosilva.al@gmail.com>"
 
-# O usuario www-data já esta disponivel por padrão nesta imagem com suas devidas pemissões.
-
 #Variaveis de ambiente
 ENV HTTPD_PREFIX /usr/local/apache2/htdocs \
     PATH $HTTPD_PREFIX/bin:$PATH
@@ -19,7 +17,7 @@ RUN mkdir -p "$HTTPD_PREFIX" \
 #Diretório de trabalho
 WORKDIR $HTTPD_PREFIX
 
-#Adicionando um app para a timezone do sistema
+#Adicionando o apk tzdata para a timezone do container
 RUN apk add --no-cache \
     tzdata
 
