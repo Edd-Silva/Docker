@@ -62,6 +62,24 @@ $ docker image ls
 
 $ docker image inspect "id-image"
 
+# Alguns Parâmetros
+
+|Parâmetros| Significado                                                              |
+|----------|--------------------------------------------------------------------------|
+| -d       | Executa o container em background                                        |
+| -i       | Modo interativo. Mantém o STDIN aberto mesmo sem console anexado         |
+| -t       | Aloca uma pseudo TTY                                                     |
+| --rm     | Automaticamente remove o container após finalização (Não funciona com -d)|
+| --name   | Nomear o container                                                       |
+| -v       | Mapeamento de volule                                                     |
+| -p       | Mapeamento de portas                                                     |
+| -m       | Limitar o uso de memória RAM                                             |
+| -c       | Balancear o uso de CPU                                                   |
+|
+
+
+
+
 <!-- Markdown link & img dfn's -->
 
 
