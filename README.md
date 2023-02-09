@@ -1,18 +1,9 @@
-
-
-# 
-
-    ___           _             
-   /   \___   ___| | _____ _ __ 
-  / /\ / _ \ / __| |/ / _ \ '__|
- / /_// (_) | (__|   <  __/ |   
-/___,' \___/ \___|_|\_\___|_|   
-                                
+ 
 
 [![Docker Version][docker-image]][docker-url]                                                                                                                
 
 ![](Docker-logo.png)
-                                                                                                                  
+                                                                                                         
 # Repositório para arquivos Dockerfile e alguns comandos.
 
 # Alguns comandos básicos para iniciar.
@@ -70,4 +61,7 @@ $ docker image ls
 # Insecionando uma imagem
 
 $ docker image inspect "id-image"
+
+<!-- Markdown link & img dfn's -->
+
 
