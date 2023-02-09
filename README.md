@@ -75,8 +75,6 @@ $ docker image inspect "id-image"
 | -p       | Mapeamento de portas                                                     |
 | -m       | Limitar o uso de memória RAM                                             |
 | -c       | Balancear o uso de CPU                                                   |
-|
-
 
 
 
