@@ -1,7 +1,7 @@
 FROM node:14-alpine
 
 LABEL version="1.0"
-MAINTAINERr="Edjanio <edjaniosilva.al@gmail.com>"
+LABEL MAINTAINERr="Edjanio <edjaniosilva.al@gmail.com>"
 
 # Adicionando um usuário nao root ao container
 RUN adduser -u 1001 -D alpine -h /home/alpine
