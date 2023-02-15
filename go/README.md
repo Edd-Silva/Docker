@@ -1,8 +1,7 @@
+
 ![](golang.png)
 
 # Container docker com app em GoLang
-
-Algumas modificações que fiz ;)
 
 # Algumas modificações que fiz ;)
 
