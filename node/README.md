@@ -1,3 +1,5 @@
+![](nodejs.png)
+
 Um simples exemplo de como dockerizar uma aplicação em node.
 
 Criando a imagem 
