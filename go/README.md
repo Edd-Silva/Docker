@@ -3,7 +3,15 @@
 
 # Container docker com app em GoLang
 
-# Algumas modificações que fiz ;)
+# No repositório do projeto-1, tem um exemplo de um Dockerfile multi-stage
+
+# Para criar a imagem do projeto-1
+$docker build -t hellogo:v.1 .
+
+# Para executar a imagem
+$docker container run -ti hellogo:v.1
+
+# Algumas modificações que fiz na imagem do repositório do projeto-2 ;)
 
 A imagem antes era baseada Debian mudei para rodar o Alpine, minimalista e segura.
 No Dockerfile adicionei o tzdata para configurar um timezone da minha região
