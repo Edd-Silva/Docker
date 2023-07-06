@@ -14,9 +14,8 @@ $docker container run -ti hellogo:v.1
 # Algumas modificações que fiz na imagem do repositório do projeto-2 ;)
 
 A imagem antes era baseada Debian mudei para rodar o Alpine, minimalista e segura.
-No Dockerfile adicionei o tzdata para configurar um timezone da minha região
+No Dockerfile adicionei o tzdata para configurar um timezone da minha região.
 Foi adicionado um usuário go, para que o container inicie em modo non-root.
-
 
 # Para começar execute os comandos abaixo.
 
