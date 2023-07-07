@@ -38,6 +38,10 @@ $ docker container ls -a
 
 $ docker container inspect "id-container"
 
+# Verificando os logs de um container
+
+$ docker container logs "id-container"
+
 # Interagindo com container em execução
 
 # Listando o conteúdo do container
@@ -56,7 +60,7 @@ $ docker container exec -u -0 -it "id-container" /bin/bash
 
 $ docker image ls
 
-# Insecionando uma imagem
+# Inspecionando uma imagem
 
 $ docker image inspect "id-image"
 
