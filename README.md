@@ -79,7 +79,17 @@ $ docker image inspect "id-image"
 | -c       | Balancear o uso de CPU                                                   |
 
 
+# Trabalhando com banco de dados no Docker
 
+$ Sim , também podemos rodar banco de dados no docker entre eles o MySQL, PostGreSQL, MariaDB entre outros.
+Vamos começar com o PostGreSQL.
+
+$ Vamos usar o comando abaixo para criar um banco em postgres passando variáveis de ambiente e porta.
+
+$ docker container run -d -p 5432:5432  -e POSTGRES_DB=curso_docker -e POSTGRES_USER=docker_usr -e POSTGRES_PASSWORD=docker_pwd postgres 
+
+$ Se for a primeira vez que você estiver executando este comando pode demorar um pouco pois ele vai baixar a image e em seguida subir o container.
+ 
 <!-- Markdown link & img dfn's -->
 
 
