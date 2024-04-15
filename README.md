@@ -78,6 +78,31 @@ $ docker image inspect "id-image"
 | -m       | Limitar o uso de memória RAM                                             |
 | -c       | Balancear o uso de CPU                                                   |
 
+# Dockerfile
+
+Você pode construir images através de um Dockerfile, abaixo algumas instruções e seus sginicados.
+
+|Instrução   | Significado                                                            |
+|------------|------------------------------------------------------------------------|
+| ADD        | Adicione arquivos e diretórios locais ou remotos.                      |
+| ARG	     | Use variáveis ​​de tempo de construção.                                  |
+| CMD        | Especifique comandos padrão.                                           |
+| COPY       | Copie arquivos e diretórios.                                           |
+| ENTRPOINT  | Especifique o executável padrão.                                       |
+| ENV        | Defina variáveis ​​de ambiente.                                          | 
+| EXPOSE     | Descreva em quais portas seu aplicativo está escutando.                |
+| FROM       | Crie um novo estágio de construção a partir de uma imagem base.        |
+| HEALTCHECK | Verifique a integridade de um contêiner na inicialização.              |
+| LABEL      | Adicione metadados a uma imagem.                                       |
+| MAINTAINER | Especifique o autor de uma imagem.                                     |
+| ONBUILD    | Especifique instruções para quando a imagem for usada em um build.     |
+| RUN        | Execute comandos de construção.                                        |
+| SHELL      | Defina o shell padrão de uma imagem.                                   |
+| STOPSIGNAL | Especifique o sinal de chamada do sistema para sair de um contêiner.   |
+| USER       | Defina o ID do usuário e do grupo.                                     |
+| VOLUME     | Crie montagens de volume.                                              |
+| WORKDIR    | Altere o diretório de trabalho.                                        |
+
 
 # Trabalhando com banco de dados no Docker
 
